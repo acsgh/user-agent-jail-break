@@ -1,0 +1,26 @@
+{
+  "description": "Avoid browser restriction by replacing the user agent in some configured pages.",
+  "manifest_version": 2,
+  "name": "User Agent Jail Break",
+  "version": "0.1",
+  "homepage_url": "https://github.com/acsgh/user-agent-jail-break",
+  "icons": {
+    "48": "icon.png",
+    "96": "icon.png"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://app.slack.com/*",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "options_ui": {
+    "page": "options.html"
+  }
+}
